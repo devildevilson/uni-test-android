@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_home">Үй</string>
+    <string name="title_services">Қызметтер</ string>
+    <string name="title_account">Тіркелгі</string>
+    <string name="title_settings">Параметрлер</ string>
+    <string name="title_dashboard">Бақылау тақтасы</string>
+    <string name="title_notifications">Хабарландырулар</ string>
+    <string name="prompt_email">Электрондық пошта</string>
+    <string name="prompt_password">Құпия сөз</string>
+    <string name="action_sign_in">Кіріңіз немесе тіркеліңіз</ string>
+    <string name="action_sign_in_short">Авторизация</string>
+    <string name="welcome">Қош келдіңіз</string>
+    <string name="invalid_username">Жарамды пайдаланушы аты емес</ string>
+    <string name="invalid_password">Құпия сөз >5 таңбадан тұруы керек</string>
+    <string name="login_failed">Жарамсыз логин немесе құпия сөз</ string>
+    <string name="language_settings">Тіл</string>
+</resources>
