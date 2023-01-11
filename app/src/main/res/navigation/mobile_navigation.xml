@@ -12,14 +12,20 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.hello_world.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:id="@+id/navigation_services"
+        android:name="com.example.hello_world.ui.services.services_fragment"
+        android:label="@string/title_services"
         tools:layout="@layout/fragment_services" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.hello_world.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:id="@+id/navigation_account"
+        android:name="com.example.hello_world.ui.account.account_fragment"
+        android:label="@string/title_account"
         tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.hello_world.ui.settings.settings_fragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

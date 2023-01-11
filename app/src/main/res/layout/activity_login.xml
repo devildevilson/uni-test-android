@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/sign_in"
-        android:text="Sign in"
+        android:text="@string/action_sign_in_short"
         android:textColor="@color/white"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -22,13 +22,15 @@
         android:id="@+id/username"
         android:layout_below="@id/sign_in"
         android:background="#aaaaaaaa"
-        android:hint="Username"
+        android:hint="@string/prompt_username"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:layout_margin="10dp"
         android:padding="20dp"
-        android:inputType="text"
-        android:drawableStart="@drawable/ic_baseline_person_24"/>
+        android:inputType="textPersonName"
+        android:autofillHints="username"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        />
 
     <EditText
         android:layout_width="match_parent"
@@ -36,19 +38,20 @@
         android:id="@+id/password"
         android:layout_below="@id/username"
         android:background="#aaaaaaaa"
-        android:hint="Password"
+        android:hint="@string/prompt_password"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:layout_margin="10dp"
         android:padding="20dp"
         android:inputType="textPassword"
+        android:autofillHints="password"
         android:drawableStart="@drawable/ic_baseline_info_24"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/login"
-        android:text="Login"
+        android:text="@string/action_login_short"
         android:textColor="@color/black"
         android:layout_below="@id/password"
         android:backgroundTint="@color/white"

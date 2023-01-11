@@ -15,4 +15,9 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">Неверный логин или пароль</string>
     <string name="language_settings">Язык</string>
+    <string name="prompt_username">Имя пользователя</string>
+    <string name="action_login_short">Войти</string>
+    <string name="lang_en">🇺🇸 Английский язык</string>
+    <string name="lang_kk">🇰🇿 Казахский язык</string>
+    <string name="lang_ru">🇷🇺 Русский язык</string>
 </resources>

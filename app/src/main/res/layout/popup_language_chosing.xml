@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:menu="@menu/languages_menu"-->
+<!--        />-->
+
+    <LinearLayout
+        android:id="@+id/langs_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:tag="ru"
+            android:text="🇷🇺 Русский язык"
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:tag="kz"
+            android:text="🇰🇿 Казахский язык"
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:tag="en"
+            android:text="🇺🇸 Английский язык"
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>
