@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetEnd="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp">
+
+    <ImageButton
+        android:id="@+id/page_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:contentDescription="Контакты"
+        android:padding="13dp"
+        android:src="@drawable/ic_baseline_contacts_24"
+        android:background="@color/white"
+        app:tint="@color/black" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="logo"
+        android:src="@drawable/ic_baseline_medical_information_32"
+        android:background="@color/white"
+        app:tint="@color/black"/>
+
+    <ImageButton
+        android:id="@+id/notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:contentDescription="notifications"
+        android:src="@drawable/ic_notifications_black_24dp"
+        android:background="@color/white"
+        app:tint="@color/black"
+        android:padding="13dp"/>
+
+</androidx.appcompat.widget.Toolbar>

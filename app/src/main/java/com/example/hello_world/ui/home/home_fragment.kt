@@ -1,12 +1,8 @@
 package com.example.hello_world.ui.home
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
+import android.view.*
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.example.hello_world.databinding.FragmentHomeBinding
 
 class home_fragment : Fragment() {
@@ -30,6 +26,7 @@ class home_fragment : Fragment() {
 //        home_view_model.text.observe(viewLifecycleOwner) {
 //            textView.text = it
 //        }
+
         return root
     }
 

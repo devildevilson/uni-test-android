@@ -3,12 +3,12 @@ package com.example.hello_world
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.hello_world.databinding.ActivityMainBinding
-import java.util.Locale
 
 class main : AppCompatActivity() {
   private lateinit var binding: ActivityMainBinding
@@ -16,11 +16,21 @@ class main : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
-    println("Current locale:  ${Locale.getDefault()}")
-    println("Current locales: ${resources.configuration.locales}")
+    //println("Current locale:  ${Locale.getDefault()}")
+    //println("Current locales: ${resources.configuration.locales}")
 
     binding = ActivityMainBinding.inflate(layoutInflater)
     setContentView(binding.root)
+
+    run {
+      val toolbar = findViewById<Toolbar>(R.id.toolbar)
+      setSupportActionBar(toolbar)
+    }
+
+    supportActionBar?.let {
+      it.setDisplayShowHomeEnabled(false)
+      it.setDisplayShowTitleEnabled(false)
+    }
 
     val navView: BottomNavigationView = binding.navView
 
@@ -40,6 +50,15 @@ class main : AppCompatActivity() {
 
     setupActionBarWithNavController(navController, appBarConfiguration)
     navView.setupWithNavController(navController)
+
+//    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+//      window.insetsController?.hide(WindowInsets.Type.statusBars())
+//    } else {
+//      window.setFlags(
+//        WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//        WindowManager.LayoutParams.FLAG_FULLSCREEN
+//      )
+//    }
   }
 
   override fun onStart() {

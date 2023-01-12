@@ -3,10 +3,11 @@ package com.example.hello_world
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import java.util.*
+import androidx.appcompat.widget.Toolbar
 
 class login_activity : AppCompatActivity() {
   private val file_name = "session_file.txt"
@@ -18,7 +19,19 @@ class login_activity : AppCompatActivity() {
     // the layout file is defined in the project res/layout/main_activity.xml file
     setContentView(R.layout.activity_login)
 
-    println("default locale: ${Locale.getDefault()}")
+    run {
+      val toolbar = findViewById<Toolbar>(R.id.toolbar)
+      setSupportActionBar(toolbar)
+      val appbar_text = toolbar.findViewById<TextView>(R.id.view_title)
+      appbar_text.text = resources.getString(R.string.title_account)
+      val appbar_back = toolbar.findViewById<ImageButton>(R.id.back)
+      appbar_back.setOnClickListener { finish() }
+    }
+
+    supportActionBar?.let {
+      it.setDisplayShowHomeEnabled(false)
+      it.setDisplayShowTitleEnabled(false)
+    }
 
     val username = findViewById<TextView>(R.id.username)
     val password = findViewById<TextView>(R.id.password)

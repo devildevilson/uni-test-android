@@ -3,61 +3,74 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    >
 
-    <TextView
-        android:layout_width="match_parent"
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_component"
         android:layout_height="wrap_content"
-        android:id="@+id/sign_in"
-        android:text="@string/action_sign_in_short"
-        android:textColor="@color/white"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        android:layout_margin="50dp"
-        android:gravity="center"/>
-
-    <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/username"
-        android:layout_below="@id/sign_in"
-        android:background="#aaaaaaaa"
-        android:hint="@string/prompt_username"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white"
-        android:layout_margin="10dp"
-        android:padding="20dp"
-        android:inputType="textPersonName"
-        android:autofillHints="username"
-        android:drawableStart="@drawable/ic_baseline_person_24"
         />
 
-    <EditText
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/password"
-        android:layout_below="@id/username"
-        android:background="#aaaaaaaa"
-        android:hint="@string/prompt_password"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white"
-        android:layout_margin="10dp"
-        android:padding="20dp"
-        android:inputType="textPassword"
-        android:autofillHints="password"
-        android:drawableStart="@drawable/ic_baseline_info_24"/>
+        android:layout_height="match_parent"
+        android:gravity="center">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/login"
-        android:text="@string/action_login_short"
-        android:textColor="@color/black"
-        android:layout_below="@id/password"
-        android:backgroundTint="@color/white"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"
-        android:padding="20dp"
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign_in"
+            android:text="@string/action_sign_in_short"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_margin="50dp"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_below="@id/sign_in"
+            android:background="#aaaaaaaa"
+            android:hint="@string/prompt_username"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:inputType="textPersonName"
+            android:autofillHints="username"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_below="@id/username"
+            android:background="#aaaaaaaa"
+            android:hint="@string/prompt_password"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:drawableStart="@drawable/ic_baseline_info_24"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:text="@string/action_login_short"
+            android:textColor="@color/black"
+            android:layout_below="@id/password"
+            android:backgroundTint="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            />
+
+    </RelativeLayout>
 
 </RelativeLayout>
